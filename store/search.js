@@ -1,4 +1,4 @@
-var input = document.querySelectorAll(".input-search");
+var inputField = document.querySelector(".input-search");
 var logButton = document.querySelector(".log-button");
 var hide = document.querySelector(".hide");
 console.log(inputField);
