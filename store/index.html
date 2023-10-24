@@ -32,121 +32,6 @@
 <body >
     <div >
         <div id="header">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/images/logo_fix1.png" alt=""
-                        style="width: 63px;height: auto;">
-                </a>
-            </div>
-
-            <!-- copy đoạn input này -->
-            <div class="input">
-                <div class="input-group mb-3 relative myDIV">
-                    <input type="text" class="input-search form-control" placeholder="Tìm kiếm..."
-                        aria-label="Recipient's username" aria-describedby="button-addon2">
-
-                    <button class="btn  log-button btn-outline-secondary"
-                        style="color: white; width: 80px; background-color: rgb(197, 183, 79);" type="button"
-                        id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
-
-
-                    <div class="hide rounded">
-                        <div class="p-2">
-                            <span style="font-size: 20px; font-weight: bold;">Bạn đang tìm kiếm sản phẩm: </span>
-                            <span style="font-size: 20px;" class="hide2"></span>
-                            <p style="font-size: 20px; font-weight: bold;">Gợi ý cho bạn: </p>
-                            <div class="d-flex">
-                                <div class="suggestion_image">
-                                    <a href="/Store/InfoProduct/InfoProduct.html"> <img class="rounded"
-                                            style="width: 90px; height: 100px;"
-                                            src="https://product.hstatic.net/1000333436/product/13__copy__8797af5827f444b5885a9a3ed955028d_master.jpg"
-                                            alt="">
-                                    </a>
-                                </div>
-                                <div class="suggestion_price ps-4 ">
-                                    <b style="font-size: 20px;">Áo vest beige họa tiết Herringbone - AV326</b>
-                                    <p style="font-size: 20px;">Giá: 2,950,000₫</p>
-                                </div>
-                            </div>
-
-                            <div class="d-flex">
-                                <div class="suggestion_image">
-                                    <a href="./quanau/quanau.html"><img class="rounded"
-                                            style="width: 90px; height: 100px;"
-                                            src="https://product.hstatic.net/1000333436/product/23_6849ce9aebf645cbb68e44f550ecf0f1_master.jpg"
-                                            alt=""></a>
-                                </div>
-                                <div class="suggestion_price ps-4 ">
-                                    <b style="font-size: 20px;">Quần ghi đậm họa tiết xương cá chìm</b>
-                                    <p style="font-size: 20px;">Giá: 850,000₫</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="login">
-                <div class="d-flex align-items-center">
-                    <button type="button" class="btn btn-dark out checkLog">Đăng nhập</button>
-                    <div>
-                        <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;">
-                        </p>
-                    </div>
-                    <div>
-                        <div class="dropdown">
-                            <button style="height: 36px;" class="btn btn-secondary dropdown-toggle disload"
-                                type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i style="font-size: 24px;" class="fa-light fa-solid fa-circle-user  px-2"></i>
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                <li onclick="clearLocalStorageAndReload()" class=" text-center disload">Đăng xuất</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="ps-4">
-                        <div aria-expanded="false" style="position: relative;">
-                            <button type="button" class="btn btn-secondary toggleButton2" style="position: relative;"><i
-                                    class="fa-solid fa-cart-shopping"></i>
-                                <p
-                                    style="position: absolute; top: -10px;
-                                    right: -14px; border: 1px solid red;
-                                    width: 26px; height: 26px; padding: 2px; border-radius: 999px; background-color: aliceblue; color: black;">
-                                    <span id="quantity">0</span></p>
-                            </button>
-                            <div id="redBox" class="mt-3 rounded" style="z-index: 999; display: none; height: max-content; font-size: 19px;">
-                                <div class="p-3" style="text-transform: none; color: #333;">
-                                    <div class="d-flex justify-content-between">
-                                        <p style="font-size: 20px;">Đơn hàng của bạn: </p>
-                                        <button id="resetButton" class="rounded" style="height: max-content;
-                                        padding: 2px 10px;
-                                        background-color: gray;
-                                        color: black;">Clear</button>
-                                    </div>
-                                    <p>Tên sản phẩm: <p id="TakeName"></p></p>
-                                    <p>Số lượng: <span id="quantity2">0</span></p>
-                                    <p class="mb-0">Tổng hóa đơn: <span id="price"></span></p>
-                                    <p class="mb-0"><a href="/Store/OrderProduct/Order.html">
-                                        <button style="background-color: rgb(209, 66, 66)" class="btn btn-danger">
-                                            Thanh Toán
-                                        </button>
-                                    </a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-
-
-        </div>
-
-        <div class="header_two">
             <nav class="navbar navbar-expand-lg navbar-light " id="color" style="position: relative;">
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -187,6 +72,124 @@
                     <strong>Thành công! </strong> Sản phẩm đã được thêm vào giỏ hàng
                 </div>
             </nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt=""
+                        style="width: 88px;height: auto;">
+                </a>
+            </div>
+
+            <!-- copy đoạn input này -->
+
+            <div id="right-header">
+                <div class="input">
+                    <div class="input-group mb-3 relative myDIV">
+                        <input type="text" class="input-search form-control" placeholder="Tìm kiếm..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+
+                        <button class="btn  log-button btn-outline-secondary"
+                            style="color: white; width: 40px; background-color: rgb(197, 183, 79);" type="button"
+                            id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+
+                        <div class="hide rounded">
+                            <div class="p-2">
+                                <span style="font-size: 20px; font-weight: bold;">Bạn đang tìm kiếm sản phẩm: </span>
+                                <span style="font-size: 20px;" class="hide2"></span>
+                                <p style="font-size: 20px; font-weight: bold;">Gợi ý cho bạn: </p>
+                                <div class="d-flex">
+                                    <div class="suggestion_image">
+                                        <a href="/Store/InfoProduct/InfoProduct.html"> <img class="rounded"
+                                                style="width: 90px; height: 100px;"
+                                                src="https://product.hstatic.net/1000333436/product/13__copy__8797af5827f444b5885a9a3ed955028d_master.jpg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                    <div class="suggestion_price ps-4 ">
+                                        <b style="font-size: 20px;">Áo vest beige họa tiết Herringbone - AV326</b>
+                                        <p style="font-size: 20px;">Giá: 2,950,000₫</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex">
+                                    <div class="suggestion_image">
+                                        <a href="./quanau/quanau.html"><img class="rounded"
+                                                style="width: 90px; height: 100px;"
+                                                src="https://product.hstatic.net/1000333436/product/23_6849ce9aebf645cbb68e44f550ecf0f1_master.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="suggestion_price ps-4 ">
+                                        <b style="font-size: 20px;">Quần ghi đậm họa tiết xương cá chìm</b>
+                                        <p style="font-size: 20px;">Giá: 850,000₫</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="login">
+                    <div class="d-flex align-items-center">
+                        <button type="button" class="btn btn-dark out checkLog">Đăng nhập</button>
+                        <div>
+                            <p class="ListName mx-3" style="margin-top: 20px; text-transform: lowercase; font-size: 18px;">
+                            </p>
+                        </div>
+                        <div>
+                            <div class="dropdown">
+                                <button style="height: 36px;" class="btn btn-secondary dropdown-toggle disload"
+                                    type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i style="font-size: 24px;" class="fa-light fa-solid fa-circle-user  px-2"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                    <li onclick="clearLocalStorageAndReload()" class=" text-center disload">Đăng xuất</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="ps-4">
+                            <div aria-expanded="false" style="position: relative;">
+                                <button type="button" class="btn btn-secondary toggleButton2" style="position: relative;"><i
+                                        class="fa-solid fa-cart-shopping"></i>
+                                    <p
+                                        style="position: absolute; top: -10px;
+                                        right: -14px; border: 1px solid red;
+                                        width: 26px; height: 26px; padding: 2px; border-radius: 999px; background-color: aliceblue; color: black;">
+                                        <span id="quantity">0</span></p>
+                                </button>
+                                <div id="redBox" class="mt-3 rounded" style="z-index: 999; display: none; height: max-content; font-size: 19px;">
+                                    <div class="p-3" style="text-transform: none; color: #333;">
+                                        <div class="d-flex justify-content-between">
+                                            <p style="font-size: 20px;">Đơn hàng của bạn: </p>
+                                            <button id="resetButton" class="rounded" style="height: max-content;
+                                            padding: 2px 10px;
+                                            background-color: gray;
+                                            color: black;">Clear</button>
+                                        </div>
+                                        <p>Tên sản phẩm: <p id="TakeName"></p></p>
+                                        <p>Số lượng: <span id="quantity2">0</span></p>
+                                        <p class="mb-0">Tổng hóa đơn: <span id="price"></span></p>
+                                        <p class="mb-0"><a href="/Store/OrderProduct/Order.html">
+                                            <button style="background-color: rgb(209, 66, 66)" class="btn btn-danger">
+                                                Thanh Toán
+                                            </button>
+                                        </a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="header_two">
+            
         </div>
 
 
@@ -315,7 +318,7 @@
                 </div>
 
 
-                <div class="PopularProduct ">
+                <div class="PopularProduct container">
                     <h1 class="text-center">Sản phẩm phổ biến</h1>
                     <div class="ListItem">
                         <div class="d-flex justify-content-between flex-wrap mb-3">
@@ -435,7 +438,7 @@
                         </div>
                         <div class="col-6">
                             <img style="border-radius: 25px;"
-                                src="store/assets/images/297320052_5794860747214794_7552311129013494593_n_7eff0689402e465ba871622db491e3e7_grande.webp"
+                                src="/store/assets/images/297320052_5794860747214794_7552311129013494593_n_7eff0689402e465ba871622db491e3e7_grande (1).webp"
                                 alt="">
                         </div>
                     </div>
@@ -544,35 +547,7 @@
         </div>
     </div>
 
-    <!-- <div>
-        <div id="dangnhap" class="addClass2">
-            <div class="close-icon">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <form action="#" class="form ">
-                <h2>Đăng Nhập</h2>
-                <div class="mb-3 mt-3">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control my-2" id="email" placeholder="Enter email" name="email">
-                </div>
-                <div class="mb-3">
-                    <label for="pwd">Mật Khẩu:</label>
-                    <input type="password" class="form-control my-2" id="pwd" placeholder="Enter password" name="pswd">
-                </div>
-                <div class="form-check mb-3">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" name="remember"> Ghi nhớ đăng nhập
-                        <a href="" class="ms-3" style="color: rgb(222, 152, 222);">Quên mật khẩu?</a>
-                    </label>
-                </div>
-                <button type="submit" value="1" class="btn btn-primary log">Đăng nhập</button>
-                <div class="pt-2">
-                    <span> Chưa có tài khoản?</span>
-                    <a href="#" class="ms-2 nextPage">Đăng kí ngay</a>
-                </div>
-            </form>
-        </div>
-    </div> -->
+    
 
 
     <!-- login form -->
@@ -631,40 +606,6 @@
     </div>
     
 
-    <!-- <div>
-        <div id="resgi" class="addClass2 " style="width: 600px; margin-left: 30%;">
-            <div class="close-icon">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <form action="#" class="form formResgister">
-                <h2 style="margin: 20px 0;">Đăng kí</h2>
-                <div class="mb-3">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control my-2" id="email2" placeholder="Enter email" name="email">
-                </div>
-                <div class="mb-3">
-                    <label for="pwd">Mật khẩu:</label>
-                    <input type="password" class="form-control my-2" id="pwd" placeholder="Enter password" name="pswd">
-                </div>
-                <div class="mb-3">
-                    <label for="phone">Số điện thoại:</label>
-                    <input type="text" class="form-control my-2" id="phone" placeholder="Enter " name="pswd">
-                </div>
-
-                <button type="submit" class="btn btn-primary btnResgister">Đăng kí <i
-                        class="fa-solid fa-square-g"></i></button>
-                <div class="form-check pt-1">
-                    <input class="form-check-input" type="checkbox" value="" id="Agree">
-                    <label class="form-check-label" for="Agree">
-                        Tôi đã đọc và đồng ý với điều khoản & chính sách
-                    </label>
-                </div>
-                <div class="pt-1">
-                    <span> Bạn đã có tài khoản?</span>
-                    <a href="#" class="ms-2">Đăng nhập ngay!</a>
-                </div>
-            </form>
-        </div> -->
     </div>
 
    <script src="main.js" type="text/javascript"></script>
