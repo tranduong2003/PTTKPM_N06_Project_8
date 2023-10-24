@@ -19,6 +19,7 @@ ulList2.addEventListener("click", function() {
 
 var login = document.querySelector('.login button[type = button]');
 
+document.querySelector('#login').style.display = 'none'
 
 login.addEventListener('click', function(){
     document.querySelector('#login').style.display = 'flex'
@@ -26,10 +27,11 @@ login.addEventListener('click', function(){
 })
 
 
-var closeLogin = document.querySelector('#dangnhap .close-icon')
-    closeLogin.addEventListener('click', function () {
-        document.querySelector('#dangnhap').style.display = 'none';
-})
+
+// var closeLogin = document.querySelector('#dangnhap .close-icon')
+//     closeLogin.addEventListener('click', function () {
+//         document.querySelector('#dangnhap').style.display = 'none';
+// })
 
 
 const container = document.getElementById('container-login');
