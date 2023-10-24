@@ -20,11 +20,14 @@ ulList2.addEventListener("click", function() {
 var login = document.querySelector('.login button[type = button]');
 
 document.querySelector('#login').style.display = 'none'
-
+function an(){
+    document.querySelector('#login').style.display = 'none'
+}
 login.addEventListener('click', function(){
     document.querySelector('#login').style.display = 'flex'
 
 })
+
 
 
 
