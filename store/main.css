@@ -81,15 +81,18 @@ img{
     width: 1380px;
     height: 100px;
     background-color: #fff;
-}
-
-.header_two{
     position: sticky;
     top: 0;
-    z-index: 99;
-    background-color: #fff;
+    z-index: 10;
+}
+/* css lai boostrap */
+.carousel-control-next{
+    width: 10% !important;
 }
 
+.mg{
+    margin-top: 20px;
+}
 
 
 #navbarNav {
@@ -517,18 +520,21 @@ img{
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
+    min-width: 140px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    margin-top: 15px;
     text-decoration: none;
     display: block;
+    font-size: 14px;
 }
-
+.dropdown-content a:last-child{
+    margin-bottom: 10px;
+}
 .dropdown-content a:hover {background-color: #ddd;}
 
 .nav-item:hover .dropdown-content {display: block;}
@@ -635,7 +641,7 @@ img{
     position: absolute;
     top: 200px;
     width: 100%;
-    z-index: 0;
+    z-index: 5;
     height: 1000px;
 }
 .bg-cover{
