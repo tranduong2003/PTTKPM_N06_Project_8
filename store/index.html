@@ -67,10 +67,7 @@
                     </div>
                 </div>
 
-                <div class="alert alert-success" id="success-alert"
-                    style="display: none; position: absolute; right: 0; top: 0; margin-top: 60px;">
-                    <strong>Thành công! </strong> Sản phẩm đã được thêm vào giỏ hàng
-                </div>
+                
             </nav>
             <div class="logo">
                 <a href="index.html">
@@ -136,6 +133,10 @@
                             </div>
                         </div>
                     </div>
+                        <div class="alert alert-success" id="success-alert"
+                            style="display: none; position: absolute; right: 0; top: 60px; margin-top: 60px;">
+                            <strong>Thành công! </strong> Sản phẩm đã được thêm vào giỏ hàng
+                        </div>
                 </div>
 
                 <div class="login">
@@ -617,6 +618,72 @@
    <script src="main.js" type="text/javascript"></script>
    <script src="search.js" type="text/javascript"></script>
    <script src="LocalSearch.js" type="text/javascript"></script>
+   <script>
+        var quantity = 0;
+        var quantity2 = 0;
+        var price = 0;
+        var emptyName = ' ';
+        var lineCounter = 1;
+
+        var quantityElement = document.getElementById('quantity');
+        var quantityElement2 = document.getElementById('quantity2');
+        var priceElement = document.getElementById('price');
+        var TakeName = document.querySelector('#TakeName');
+        const buyBtns = document.querySelectorAll('.BuyItem');
+        console.log(buyBtns);
+
+        for (var i = 0; i < buyBtns.length; i++) {
+            buyBtns[i].addEventListener('click', function (e) {
+                $("#success-alert").fadeTo(2000, 500).slideUp(500, function () {
+                    $("#success-alert").slideUp(500);
+                });
+
+                var productPrice = parseInt(this.getAttribute('data-price'));
+                var dataText = this.getAttribute('data-text');
+                console.log(dataText);
+
+                quantity++;
+                quantity2++;
+                price += productPrice;
+                var formattedPrice = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(price);
+
+                var linePrefix = lineCounter + '. ';
+                lineCounter++;
+                TakeName.textContent += linePrefix + dataText + " | ";
+                quantityElement.textContent = quantity;
+                quantityElement2.textContent = quantity2;
+                priceElement.textContent = formattedPrice;
+            });
+        }
+
+        resetButton.addEventListener('click', function () {
+            quantity = 0;
+            quantity2 = 0;
+            price = 0;
+            emptyName = ' ';
+            lineCounter = 1;
+
+            quantityElement.textContent = quantity;
+            quantityElement2.textContent = quantity2;
+            priceElement.textContent = price;
+            TakeName.innerText = emptyName;
+        });
+    </script>
+
+    <!-- ẩn hiện đặt hàng -->
+    <script>
+        var toggleButton2 = document.querySelector(".toggleButton2");
+        var redBox = document.getElementById("redBox");
+
+        toggleButton2.addEventListener("click", function () {
+            if (redBox.style.display == 'none') {
+                redBox.style.display = 'block'
+            }
+            else {
+                redBox.style.display = 'none'
+            }
+        });
+</script>
 </body>
 
 </html>
